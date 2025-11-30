@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Currency App</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+</head>
+<body>
+  
+  <!-- ✅ Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 Currency App</div>
+    <ul class="nav-links">
+      <li><a href="index.html">💵 Currency Converter</a></li>
+      <li><a href="lives.html">💹 Live Rates</a></li>
+      <li><a href="history.html">📊 Historical Rates</a></li  >
+    </ul>
+  </nav>
+  
+
+  <!-- ✅ Hero Section -->
+  <section class="hero">
+        <div id="lottie-left" class="lottie-box"></div>
+    <div class="hero-content">
+      <h1>Exchange Local <span>Currency</span> for Global Power</h1>
+      <p>Get real-time rates and intuitive conversions at your fingertips.</p>
+      <button id="getStartedBtn">🌐 Get Started
+        
+      </button>
+      
+    </div>
+
+    <div id="lottie-right" class="lottie-box"></div>
+  </section>
+    
+  <!-- ✅ Hidden Country Grid Section -->
+  <section id="countrySection" class="hidden">
+    <h1 style="text-align:center; margin-top:2rem;">🌍 All Countries</h1>
+    <div class="country-grid" id="countryGrid"></div>
+  </section>
+  <footer class="footer hidden" id="pageFooter">
+  <div class="footer-content">
+    <p>🌍 Currency Exchange App &copy; 2025</p>
+    <p>Developed with 💻 by Suyash Choudhary</p>
+  </div>
+</footer>
+
+  <!-- ✅ Scripts -->
+  <script src="codes.js"></script>
+  <script src="home.js"></script>
+  <script>
+    // Show flag grid on button click
+    document.getElementById("getStartedBtn").addEventListener("click", () => {
+      document.getElementById("countrySection").classList.remove("hidden");
+      document.getElementById("getStartedBtn").style.display = "none";
+    });
+     lottie.loadAnimation({
+      container: document.getElementById("lottie-left"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path:  './images/animation.json'
+    });
+
+    // Load Lottie animation on the right side only
+    lottie.loadAnimation({
+      container: document.getElementById("lottie-right"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: './images/anim.json' // Ensure this path is correct
+    });
+  </script>
+  
+
+</body>
+</html>

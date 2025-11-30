@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historical Exchange Rates</title>
+  <link rel="stylesheet" href="history.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">📊 Historical Rates</div>
+    <ul class="nav-links">
+      <li><a href="index.html">💵 Converter</a></li>
+      <li><a href="lives.html">📈 Live Rates</a></li>
+      <li><a href="home.html">🏠 Home</a></li>
+    </ul>
+  </nav>
+
+  <main class="chart-section">
+    
+  <h2 id="chartTitle">Currency Exchange Trends - Past 30 Days</h2>
+  
+    <label for="baseCurrency">Select Base Currency: </label>
+    <select id="baseCurrency">
+      
+    </select>
+    <img id="baseFlag" src="" alt="Flag" width="24" style="vertical-align: middle; margin-left: 8px;">
+
+      <label for="compareCurrency">Select Currency to Compare:</label>
+<select id="compareCurrency">
+  <!-- Options added by JavaScript -->
+</select>
+<img id="compareFlag" src="" alt="Flag" width="24" style="vertical-align: middle; margin-left: 8px;">
+
+  <canvas id="rateChart"></canvas>
+
+  </main>
+ <script src="codes.js"></script>
+  <script src="history.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Forex Rates</title>
+  <link rel="stylesheet" href="lives.css">
+   <style>
+    table {
+      width: 90%;
+      margin: 2rem auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    img {
+      width: 32px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">live-indicator
+      <img src="images/background.jpeg" alt="logo" />
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">🏠Home</a></li>
+      <li><a href="index.html">💵Currency Converter</a></li>
+      <li><a href="history.html">📊Historical Rates</a></li>
+      
+    </ul>
+  </nav>
+   <h1 style="text-align:center;">Live Currency Rates (Base: USD)
+    <span class="live-indicator"></span>
+   </h1>
+  <table id="ratesTable">
+    <thead>
+      <tr>
+        <th>Flag</th>
+        <th>Code</th>
+        <th>Currency Name</th>
+        <th>Country Name</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="codes.js"></script>
+  <script src="lives.js"></script>
+</body>
+</html>
+
+ 
