@@ -1,0 +1,1 @@
+ForexPro is a responsive multi-page web app that provides real-time currency conversion, historical exchange-rate visualizations, and country-flag integration. The frontend is built with HTML/CSS/JavaScript, and the backend uses Node.js + MongoDB. A simulated payment flow is implemented with Razorpay for demo purchase flows.
